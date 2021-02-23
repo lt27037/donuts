@@ -1,0 +1,16 @@
+$mainColor: #fff;
+$secondColor: #fff;
+$white: #ffffff;
+$black: #000000;
+
+@mixin elementFlex($direction, $justify, $align){
+   display: flex;
+   justify-content: $justify;
+   align-items: $align;
+   flex-direction: $direction;
+}
+
+@mixin selfCenter(){
+   justify-self: center;
+   align-self: center;
+}
