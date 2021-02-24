@@ -7,14 +7,11 @@ import Donuts from '../../images/donuts-main-baner.jpg';
 import '../../styles/Mainsection.scss';
 
 const Mainsection = () => {
-
    gsap.registerPlugin(ScrollTrigger);
-
    const donutsBg = useRef(null);
 
    useEffect(
       () => {
-
          const tl = gsap.timeline({
             scrollTrigger: {
                trigger: '.welcome',
@@ -23,11 +20,10 @@ const Mainsection = () => {
                scrub: true
             }
          });
-
          tl.to(donutsBg.current, {y: 120}, 0);
       },
       []
-   )
+   );
 
    return (
       <section className="mainSection">

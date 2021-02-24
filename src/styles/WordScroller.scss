@@ -1,0 +1,12 @@
+.wordScroller{
+   display: flex;
+   position: absolute;
+   width: 300vw;
+   &__word{
+      padding: 0 2.5rem;
+      font-size: 6rem;
+      display: flex;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+}
