@@ -28,7 +28,6 @@ const Header = () => {
             stroke.forEach(element => element.style.stroke = "#000");
             fill.forEach(element => element.style.fill = "#000");
          })
-         console.log(logoElement.current);
 
          let wrapper = logoElement.current;
 
