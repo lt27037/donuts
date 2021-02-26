@@ -1,16 +1,20 @@
 import React from 'react';
 
-import pictures from '../images/products/donut1-min.jpg'
-
 import '../styles/ProductsThumbnail.scss';
 
-const ProductThumbnail = ({product}) => {
+const ProductThumbnail = ({ product }) => {
+
+   const { assets, name, price } = product;
+   const [ picture ] = assets;
+
    return (
-      <div className="productThumbnail">
-         <img src={pictures} alt="donut" className="productThumbnail__photo"/>
+      <div className="productThumbnail" >
+         <div className="productThumbnail__photoWrapper">
+            <img src={picture.url} alt="donut" className="productThumbnail__photo"/>
+         </div>
          <div className="productThumbnail__info">
-            <span className="productThumbnail__title">{product.name}</span>
-            <span className="productThumbnail__price">{product.price.formatted}zł</span>
+            <span className="productThumbnail__title">{name}</span>
+            <span className="productThumbnail__price">{price.formatted}zł</span>
          </div>
       </div>
    );

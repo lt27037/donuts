@@ -1,35 +1,51 @@
 @import 'variables';
 
 .productThumbnail{
-   width: 400px;
-   min-height: 600px;
+   @include selfCenter();
+   display: flex;
+   justify-self: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   min-height: 450px;
    position: relative;
-   overflow: hidden;
+   &__photoWrapper{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      top: 0;
+      height: 400px;
+      overflow: hidden;
+   }
    &__photo{
       position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130%;
       object-fit: cover;
-      transition: transform .2s ease-in-out;
-      &:hover{
-         transform: scale(1.1);
-      }
+      justify-self: center;
+      overflow: hidden;
    }
    &__info{
       position: absolute;
-      width: 100%;
-      padding: 40px 5%;
-      left: 0;
-      bottom: 0%;
-      @include elementFlex(row, space-between, center);
-      background-image: linear-gradient(to top, #ffffff, transparent);
+      padding: 50px 3%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      bottom: -15%;
+      @include elementFlex(column, center, flex-start);
+      // background-image: linear-gradient(to top, #00000055 , transparent);
    }
    &__price,
    &__title{
+      color: #000000;
       font-size: 2rem;
       font-weight: 600;
       letter-spacing: -0.1rem;
+   }
+   &__price{
+      font-weight: 400;
    }
 }

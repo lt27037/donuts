@@ -12,10 +12,7 @@ const TopProducts = () => {
    gsap.registerPlugin(ScrollTrigger);
    const wrapper = useRef(null);
    const state = useSelector(state => state);
-
    const { products } = state;
-
-   console.log(products);
 
    useEffect(
       () => {
@@ -23,22 +20,53 @@ const TopProducts = () => {
             scrollTrigger: {
                trigger: '.topProducts',
                start: 'top bottom',
-               end: 'bottom center',
+               end: 'bottom center', 
                scrub: true
             }
          });
+
          tl.to('.wordScroller', {x: -250}, 0);
       },
       []
    );
 
-   const productsElements = products.map(product => <ProductThumbnail product={product} />);
+   useEffect(
+      () => {
+         const products = document.querySelectorAll('.productThumbnail');
+         if(products.length !== 0){
+            const tl = gsap.timeline({
+               scrollTrigger: {
+                  trigger: '.topProducts',
+                  start: 'top 70%',
+                  end: 'top 10%', 
+                  scrub: true
+               }
+            });
+            
+            tl.from(products, {
+               stagger: {
+                  from: 'start',
+                  axis: 'x',
+                  amount: 0.3
+               },
+               y: 100,
+               opacity: 0
+            }, 0);
+         }
+      },
+      [products]
+   )
+
+   const popular = products.filter(product => products.indexOf(product) < 4);
+   const productsElements = popular.map(product => <ProductThumbnail key={product.id} product={product} />);
 
 
    return (
       <section className="topProducts" ref={wrapper}>
          <WordScroller />
-         {productsElements[0]}
+         <div className="topProducts__wrapper">
+            {productsElements}
+         </div>
       </section>
    );
 };
