@@ -5,6 +5,16 @@
    min-height: 160vh;
    background-color: pink;
    position: relative;
+   &__zigzak{
+      position: absolute;
+      right: 10vw;
+      top: -10vh;
+   }
+   &__strzalka{
+      position: absolute;
+      left: 10vw;
+      bottom: -10vh;
+   }
    &__napis2,
    &__napis1{
       position: absolute;

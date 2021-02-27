@@ -27,7 +27,7 @@ const Mainsection = () => {
 
    return (
       <section className="mainSection">
-         <h1 className="mainSection__title">Donuts.</h1>
+         <h1 className="mainSection__title"><span>Ręcznie robione</span>Rzemieślnicze pączki</h1>
          <img 
          src={Donuts} 
          alt="Obrazek w tle przedstawiający donuty" 

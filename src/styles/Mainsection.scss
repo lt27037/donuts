@@ -16,11 +16,16 @@
       z-index: 0;
    }
    &__title{
+      @include elementFlex(column, center, flex-start);
       position: absolute;
-      left: 5vw;
-      bottom: 7vw;
+      left: 4vw;
+      bottom: 5vw;
       font-size: 10rem;
       color: $white;
       z-index: 2;
+      span{
+         font-weight: 400;
+         font-size: 55%;
+      }
    }
 }
