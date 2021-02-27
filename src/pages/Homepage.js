@@ -5,6 +5,7 @@ import { fetchProducts } from '../redux/shopActions';
 
 import Mainsection from '../components/sections/Mainsection';
 import TopProducts from '../components/sections/TopProducts';
+import About from '../components/sections/About';
 import Header from '../components/Header';
 
 const Homepage = () => {
@@ -22,6 +23,7 @@ const Homepage = () => {
          <Header />
          <Mainsection />
          <TopProducts />
+         <About />
       </div>
    );
 };

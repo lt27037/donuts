@@ -37,8 +37,8 @@ const TopProducts = () => {
             const tl = gsap.timeline({
                scrollTrigger: {
                   trigger: '.topProducts',
-                  start: 'top 70%',
-                  end: 'top 10%', 
+                  start: 'top 60%',
+                  end: 'top 5%', 
                   scrub: true
                }
             });

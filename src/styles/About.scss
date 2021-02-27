@@ -1,0 +1,42 @@
+@import 'variables';
+
+.about{
+   width: 100%;
+   min-height: 160vh;
+   background-color: pink;
+   position: relative;
+   &__napis2,
+   &__napis1{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      path{
+         width: 70%;
+      }
+   }
+   &__napis1{
+      top: 15vh;
+   }
+   &__napis2{
+      bottom: 15vh;
+   }
+   &__woman{
+      position: absolute;
+      width: 600px;
+      top: 65vh;
+      left: 50%;
+      transform: translateX(-50%) rotateZ(-9deg);
+   }
+   &__ponczek{
+      position: absolute;
+      width: 190px;
+   }
+   &__ponczek.first{
+      top: 50vh;
+      left: 10vw;
+   }
+   &__ponczek.second{
+      bottom: 10vh;
+      right: 8vw;
+   }
+}
