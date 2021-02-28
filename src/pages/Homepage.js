@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/shopActions';
 
 import Mainsection from '../components/sections/Mainsection';
@@ -10,10 +10,13 @@ import About from '../components/sections/About';
 
 const Homepage = () => {
    const dispatch = useDispatch();
+   const products = useSelector(state => state.products);
 
    useEffect(
       () => {
-         dispatch(fetchProducts())
+         if(products.length === 0){
+            dispatch(fetchProducts())
+         }
       },
       []
    )

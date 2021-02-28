@@ -11,7 +11,7 @@ const ProductThumbnail = ({ product }) => {
 
    const handleLink = () => {
       history.push({
-         pathname: `/product/${product?.id}`
+         pathname: `/produkt/${product?.id}`
       })
    }
 

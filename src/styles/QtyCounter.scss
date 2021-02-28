@@ -1,0 +1,59 @@
+@import 'variables';
+
+.qtyCounter{
+   @include elementFlex(row, space-between, center);
+   font-size: 2rem;
+   background-color: pink;
+   border-radius: 999px;
+   width: 120px;
+   height: 4rem;
+   &__button{
+      @include elementFlex(row, center, center);
+      cursor: pointer;
+      width: 4rem;
+      height: 4rem;
+      background-color: transparent;
+      color: $black;
+      border-style: none;
+      border-radius: 50%;
+      font-size: 3rem;
+      outline: none;
+      position: relative;
+      
+      &:hover::before,
+      &:hover::after{
+         background: $white;
+      }
+      &::before,
+      &::after{
+         content: '';
+         height: 40%;
+         width: 2px;
+         background-color: $black;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transition: background .2s;
+      }
+      &::before{
+         transform: translateX(-50%) translateY(-50%) rotateZ(90deg);
+      }
+      &::after{
+         transform: translateX(-50%) translateY(-50%);
+      }
+      &:first-of-type{
+         &::after{
+            display: none;
+         }
+      }
+   }
+   &__number{
+      font-weight: 500;
+      width: 5rem;
+      border-style: none;
+      background-color: transparent;
+      font-size: 2rem;
+      text-align: center;
+      outline: none;
+   }
+}

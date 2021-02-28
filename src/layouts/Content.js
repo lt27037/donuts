@@ -1,24 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Homepage from '../pages/Homepage';
 import Product from '../pages/Product';
 
 const Content = () => {
    return (
-      <Router>
-         <Switch>
+      <Switch>
 
-            <Route path="/" exact >
-               <Homepage />
-            </Route>
+         <Route path="/" exact >
+            <Homepage />
+         </Route>
 
-            <Route path="/produkt/:id" >
-               <Product />
-            </Route>
+         <Route path="/produkt/:id" >
+            <Product />
+         </Route>
 
-         </Switch>
-      </Router>
+      </Switch>
    );
 };
 
