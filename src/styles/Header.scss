@@ -7,10 +7,14 @@
    position: fixed;
    top: 0;
    left: 0;
-   @include elementFlex(row, flex-start, center);
+   @include elementFlex(row, space-between, center);
    z-index: 100;
    &__logo{
       width: 180px;
+   }
+   .cartCounter{
+      font-size: 3rem;
+      color: #fff;
    }
 }
 

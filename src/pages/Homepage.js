@@ -7,7 +7,6 @@ import Mainsection from '../components/sections/Mainsection';
 import TopProducts from '../components/sections/TopProducts';
 import Recipes from '../components/sections/Recipes';
 import About from '../components/sections/About';
-import Header from '../components/Header';
 
 const Homepage = () => {
    const dispatch = useDispatch();
@@ -21,7 +20,6 @@ const Homepage = () => {
 
    return (
       <div>
-         <Header />
          <Mainsection />
          <TopProducts />
          <About />
