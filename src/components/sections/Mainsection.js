@@ -20,7 +20,7 @@ const Mainsection = () => {
                scrub: true
             }
          });
-         tl.to(donutsBg.current, {y: 150}, 0);
+         tl.to(donutsBg.current, {y: 180}, 0);
       },
       []
    );

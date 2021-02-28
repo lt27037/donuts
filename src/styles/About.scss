@@ -12,7 +12,7 @@
    }
    &__strzalka{
       position: absolute;
-      left: 10vw;
+      left: 10vw;    
       bottom: -10vh;
    }
    &__napis2,
@@ -48,5 +48,33 @@
    &__ponczek.second{
       bottom: 10vh;
       right: 8vw;
+   }
+}
+
+@media(max-width: 1550px){
+   .about{
+      &__zigzak{
+         width: 120px;
+      }
+      &__strzalka{ 
+         bottom: -15vh;
+         width: 150px;
+      }
+      &__napis2,
+      &__napis1{
+         width: 60%;
+      }
+      &__napis1{
+         top: 5vh;
+      }
+      &__napis2{
+         bottom: 5vh;
+      }
+      &__woman{
+         width: 500px;
+      }
+      &__ponczek{
+         width: 170px;
+      }
    }
 }

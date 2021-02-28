@@ -1,0 +1,22 @@
+@import 'variables';
+
+.recipes{
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   &__photo{
+      position: absolute;
+      right: 10vw;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+
+@media(max-width: 1550px){
+   .recipes{
+      &__photo{
+         width: 650px;
+         right: 5vw;
+      }
+   }
+}
