@@ -1,33 +1,29 @@
 @import 'variables';
 
-.recipes{
+.ourShop{
    width: 100%;
-   min-height: 110vh;
-   position: relative;
+   padding: 0 5%;
+   min-height: 100vh;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: 100vh;
+   position: relative;
    &__photo{
       @include selfCenter();
-      grid-column: 2;
-      grid-row: 1;
       transform: rotateZ(-4deg);
+      width: 900px;
+      grid-row: 1;
+      grid-column: 1;
    }
    &__text{
-      @include selfCenter();
-      grid-column: 1;
       grid-row: 1;
+      grid-column: 2;
       font-size: 3.5rem;
       line-height: 5rem;
-      padding: 0 15%;
-   }
-}
-
-@media(max-width: 1550px){
-   .recipes{
-      &__photo{
-         width: 650px;
-         right: 5vw;
-      }
+      padding: 20% 13%;
+      position: absolute;
+      left: -5%;
+      transform: translateY(-50%);
+      top: 50%;
    }
 }
