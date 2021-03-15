@@ -1,11 +1,12 @@
 import * as actionTypes from './shopTypes';
 import { shop } from '../commercejs/shop';
 
-export const addToCart = (itemID) => (
+export const addToCart = (itemID, qty = 1) => (
    {
       type: actionTypes.ADD_TO_CART,
       payload: {
-         id: itemID
+         id: itemID,
+         qty,
       }
    }
 );

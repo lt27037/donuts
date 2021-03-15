@@ -9,6 +9,7 @@
    left: 0;
    @include elementFlex(row, space-between, center);
    z-index: 100;
+   filter: invert(100%);
    &__logo{
       width: 180px;
    }
