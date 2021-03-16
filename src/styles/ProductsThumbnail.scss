@@ -2,18 +2,17 @@
 
 .productThumbnail{
    @include selfCenter();
+   @include elementFlex(column, center, center);
    display: flex;
    justify-self: center;
    align-items: center;
    flex-direction: column;
    width: 100%;
-   min-height: 450px;
+   min-height: 500px;
    position: relative;
    cursor:  pointer;
    &__photoWrapper{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
       width: 350px;
       top: 0;
       height: 400px;
@@ -29,13 +28,25 @@
       justify-self: center;
       overflow: hidden;
    }
+   &__wrapper{
+      @include elementFlex(row, space-between, center);
+      max-width: 350px;
+      padding: 0 1%;
+   }
+   &__addToCart{
+      width: 3rem;
+      path{
+         transition: filter .2s;
+      }
+      &:hover{
+         path{
+            filter: invert(100%);
+         }
+      }
+   }
    &__info{
-      position: absolute;
-      padding: 50px 3%;
-      left: 50%;
-      transform: translateX(-50%);
+      padding: 20px 0;
       width: 350px;
-      bottom: -15%;
       @include elementFlex(column, center, flex-start);
       // background-image: linear-gradient(to top, #00000055 , transparent);
    }

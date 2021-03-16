@@ -17,15 +17,18 @@
       font-size: 12rem;
       font-weight: 400;
    }
-   &__button{
+   &__button{ 
       @include selfCenter();
+      @include elementFlex(column, center, center);
       padding: 4rem;
       border: none;
       background-color: transparent;
-      font-size: 4rem;
+      font-size: 3rem;
       cursor: pointer;
-      &:hover{
-         color: #2d2d2d;
+      border: 2px solid #000;
+      a{
+         color: #000;
+         text-decoration: none;
       }
    }
 }

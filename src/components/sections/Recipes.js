@@ -24,10 +24,10 @@ const Recipes = () => {
   return (
     <div className="recipes">
       <p className="recipes__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas
-        minus dignissimos assumenda veniam voluptatum aut blanditiis vel vero,
-        repellendus rem. Ducimus excepturi inventore cupiditate reprehenderit
-        provident itaque, iste voluptatibus!
+        Wszystko zaczęło się od pasji do pieczenia, która następnie zamieniła
+        się w pasję do cukiernictwa połączoną z profesjonalną edukacją i ciągłym
+        doskonaleniem się w tej dziedzinie. Te umiejętności pozwoliły nam
+        pracować nad recepturą pączków.
       </p>
       <img
         src={dough}

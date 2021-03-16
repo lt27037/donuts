@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import { ReactComponent as LogoSvg } from "../images/Logo-mini.svg";
 import CartCounter from "../components/CartCounter";
@@ -16,9 +16,14 @@ const Header = () => {
   };
 
   return (
-    <header className="mainHeader header--invert">
+    <header className="mainHeader ">
       <LogoSvg className="mainHeader__logo" onClick={handleLink} />
-      <CartCounter />
+      <div className="mainHeader__wrapper">
+        <CartCounter />
+        <Link to="/produkty" className="mainHeader__products">
+          Produkty
+        </Link>
+      </div>
     </header>
   );
 };

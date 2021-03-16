@@ -9,10 +9,11 @@ const OurShop = () => {
     <div className="ourShop">
       <img src={shop} alt="zdjęcie sklepu" className="ourShop__photo" />
       <p className="ourShop__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint
-        tempora voluptatem vel error, quae obcaecati enim magni at distinctio
-        aut? Facilis nemo voluptate numquam, doloremque eligendi quis unde
-        velit.
+        Jesteśmy firmą rodzinną. Zawsze kochaliśmy słodkości, a pączki domowej
+        roboty często gościły na naszych stołach. Pewnego dnia postanowiliśmy
+        podzielić się nimi z Wami. Stary przepis wykorzystywany dotąd do
+        pieczenia pączków na niedzielny stół, stał się udoskonaloną recepturą,
+        według której teraz powstają nasze słodkości.
       </p>
     </div>
   );

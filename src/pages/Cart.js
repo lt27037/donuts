@@ -24,7 +24,7 @@ const Cart = () => {
         {items.length !== 0 ? items : isEmpty}
       </section>
       <section className="cart__summary">
-        <CartSummary />
+        <CartSummary cart={cart} />
       </section>
     </div>
   );

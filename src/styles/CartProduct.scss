@@ -21,11 +21,15 @@
       width: 120px;
       height: 120px;
       object-fit: cover;
+      cursor: pointer;
    }
    &__name{
+      @include elementFlex(row, flex-start, center);
       justify-self: start;
       align-self: center;
-
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
    }
    &__delete{
       position: relative;

@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import ProductThumbnail from "../../components/ProductThumbnail";
 
@@ -20,7 +21,9 @@ const Products = () => {
     <div className="products">
       <h2 className="products__title">Nasza oferta</h2>
       {arr}
-      <button className="products__button">Zobacz więcej</button>
+      <button className="products__button">
+        <Link to="/produkty">Zobacz wszystkie</Link>
+      </button>
     </div>
   );
 };
