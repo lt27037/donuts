@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/donuts/static/css/main.e3f77f11.chunk.css",
+    "main.js": "/donuts/static/js/main.0d6da6c3.chunk.js",
+    "main.js.map": "/donuts/static/js/main.0d6da6c3.chunk.js.map",
+    "runtime-main.js": "/donuts/static/js/runtime-main.bd512dfc.js",
+    "runtime-main.js.map": "/donuts/static/js/runtime-main.bd512dfc.js.map",
+    "static/js/2.fb542eb3.chunk.js": "/donuts/static/js/2.fb542eb3.chunk.js",
+    "static/js/2.fb542eb3.chunk.js.map": "/donuts/static/js/2.fb542eb3.chunk.js.map",
+    "index.html": "/donuts/index.html",
+    "static/css/main.e3f77f11.chunk.css.map": "/donuts/static/css/main.e3f77f11.chunk.css.map",
+    "static/js/2.fb542eb3.chunk.js.LICENSE.txt": "/donuts/static/js/2.fb542eb3.chunk.js.LICENSE.txt",
+    "static/media/Logo-mini.59ac41ac.svg": "/donuts/static/media/Logo-mini.59ac41ac.svg",
+    "static/media/NATURALNE-SKŁADNIKI.825ea889.svg": "/donuts/static/media/NATURALNE-SKŁADNIKI.825ea889.svg",
+    "static/media/WYTWARZANE-TRADYCYJNIE.caa2fd2e.svg": "/donuts/static/media/WYTWARZANE-TRADYCYJNIE.caa2fd2e.svg",
+    "static/media/add_shopping_cart_black_24dp.98135652.svg": "/donuts/static/media/add_shopping_cart_black_24dp.98135652.svg",
+    "static/media/donuts-main-baner.64c98608.jpg": "/donuts/static/media/donuts-main-baner.64c98608.jpg",
+    "static/media/dough.b91764af.jpg": "/donuts/static/media/dough.b91764af.jpg",
+    "static/media/kobieta.be269d8a.jpg": "/donuts/static/media/kobieta.be269d8a.jpg",
+    "static/media/ponczek.a3f058b0.png": "/donuts/static/media/ponczek.a3f058b0.png",
+    "static/media/ponczek2.67c75fb7.png": "/donuts/static/media/ponczek2.67c75fb7.png",
+    "static/media/shop.12bf01b4.jpg": "/donuts/static/media/shop.12bf01b4.jpg",
+    "static/media/shopping-cart-solid (1).d146d6c3.svg": "/donuts/static/media/shopping-cart-solid (1).d146d6c3.svg",
+    "static/media/strzalka.3af65b2f.svg": "/donuts/static/media/strzalka.3af65b2f.svg",
+    "static/media/zagzak.92ccabac.svg": "/donuts/static/media/zagzak.92ccabac.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd512dfc.js",
+    "static/js/2.fb542eb3.chunk.js",
+    "static/css/main.e3f77f11.chunk.css",
+    "static/js/main.0d6da6c3.chunk.js"
+  ]
+}
