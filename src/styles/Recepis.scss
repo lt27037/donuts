@@ -26,8 +26,31 @@
 @media(max-width: 1550px){
    .recipes{
       &__photo{
-         width: 650px;
-         right: 5vw;
+         width: 600px;
+      }
+   }
+}
+
+@media(max-width: 1300px){
+   .recipes{
+      &__photo{
+         width: 480px;
+      }
+   }
+}
+
+@media(max-width: 786px){
+   .recipes{
+      @include elementFlex(column, center, center);
+      &__photo{
+         width: 300px;
+      }
+      &__text{
+         width: 100%;
+         padding: 0 4%;
+         text-align: center;
+         font-size: 3rem;
+         margin-bottom: 5vh;
       }
    }
 }

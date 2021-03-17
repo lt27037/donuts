@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as CartIcon } from "../images/shopping_cart_black_24dp.svg";
+import { ReactComponent as CartIcon } from "../images/shopping-cart-solid (1).svg";
 
 const CartCounter = () => {
   const cart = useSelector((state) => state.cart);

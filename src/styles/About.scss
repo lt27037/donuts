@@ -78,3 +78,38 @@
       }
    }
 }
+
+@media(max-width: 786px){
+   .about{
+      min-height: 130vh;
+      &__zigzak{
+         width: 120px;
+      }
+      &__strzalka{ 
+         bottom: -20vh;
+         width: 120px;
+      }
+      &__napis2,
+      &__napis1{
+         width: 98%;
+         path{
+            stroke-width: 5px;
+         }
+      }
+      &__napis1{
+         top: 5vh;
+      }
+      &__napis2{
+         bottom: 5vh;
+      }
+      &__woman{
+         width: 300px;
+      }
+      &__ponczek{
+         width: 100px;
+         &.second{
+            bottom: -30vh;
+         }
+      }
+   }
+}

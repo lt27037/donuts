@@ -9,6 +9,7 @@
    &__title{
       font-size: 3rem;
       font-weight: 400;
+      text-align: right;
       padding-bottom: 1rem;
    }
    &__subtitle{
@@ -70,6 +71,64 @@
       border-radius: 999px;
       &:hover{
          background: pink;
+      }
+   }
+}
+
+@media(max-width: 1200px){
+   .cartSummary{
+      padding: 30px 5%;
+      &__promo{
+         padding: 4rem 0;
+         &__title{
+            font-size: 2rem;
+         }
+         &__input{
+            width: 100%;
+            padding: 4px;
+            font-size: 2.5rem;
+         }
+         &__button{
+            font-size: 2rem;
+            padding: 0.8rem 1.5rem;
+         }
+      }
+   }
+}
+
+@media(max-width: 1000px){
+   .cartSummary{
+      width: 100%;
+      padding: 30px 5%;
+      align-items: flex-start;
+      &__title{
+         font-size: 3rem;
+         text-align: left;
+      }
+      &__subtitle{
+         font-size: 3rem;
+      }
+      &__price{
+         font-size: 3rem;
+      }
+      &__shipPrice{
+         font-size: 2.5rem;
+      }
+      &__fullPrice{
+         font-size: 4.5rem;
+         font-weight: 600;
+         padding: 0.5rem 0 2rem 0;
+      }
+      &__promo{
+         padding: 4rem 0;
+         align-items: flex-start;
+         &__title{
+            font-size: 2rem;
+            text-align: left;
+         }
+         &__button{
+            font-size: 2rem;
+         }
       }
    }
 }

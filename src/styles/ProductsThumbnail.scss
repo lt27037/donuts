@@ -36,7 +36,7 @@
    &__addToCart{
       width: 3rem;
       path{
-         transition: filter .2s;
+         transition: filter .2s; 
       }
       &:hover{
          path{
@@ -64,6 +64,41 @@
 
 @media(max-width: 1550px){
    .productThumbnail{
-      
+      &__photoWrapper{
+         max-width: 300px;
+         height: 375px;
+      }
+      &__wrapper{
+         max-width: 300px;
+         
+      }
+      &__info{
+         padding: 0;
+      }
+   }
+}
+
+@media(max-width: 786px){
+   .productThumbnail{
+      &__photoWrapper{
+         max-width: 400px;
+         width: 100%;
+         height: 400px;
+      }
+      &__wrapper{
+         max-width: 400px;
+         width: 100%;
+         
+      }
+      &__info{
+         padding: 2rem 3%;
+      }
+      &__price,
+      &__title{
+         font-size: 3rem;
+      }
+      &__addToCart{
+         width: 5rem;
+      }
    }
 }

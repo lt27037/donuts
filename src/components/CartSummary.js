@@ -26,9 +26,7 @@ const CartSummary = ({ cart }) => {
           onChange={handlePromocode}
           value={promocode}
         />
-        <button className="cartSummary__promo__button">
-          Dodaj kod promocyjny
-        </button>
+        <button className="cartSummary__promo__button">Dodaj zniżkę</button>
       </label>
       <h3 className="cartSummary__subtitle">Łącznie</h3>
       <span className="cartSummary__fullPrice">

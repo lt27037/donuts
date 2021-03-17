@@ -45,3 +45,54 @@
       grid-row: 4;
    }
 }
+
+@media(max-width: 1350px){
+   .product{
+      &__photo{
+         width: 450px;
+      }
+      &__info{
+         width: 80%;
+      }
+   }
+}
+
+@media(max-width: 1000px){
+   .product{
+      &__photo{
+         width: 370px;
+      }
+      &__info{
+         width: 95%;
+      }
+   }
+}
+
+@media(max-width: 786px){
+   .product{
+      padding: 10rem 0;
+      @include elementFlex(column, flex-start, center);
+      &__photo{
+         width: 100%;
+         max-width: 340px;
+         margin-bottom: 5rem;
+      }
+      &__info{
+         padding: 0 5%;
+         width: 100%;
+         max-width: 600px;
+      }
+      &__price{
+         padding-bottom: 2rem;
+         font-size: 4rem;
+      }
+      .button{
+         justify-self: start;
+         grid-row: 4;
+         grid-column: 2;
+      }
+      .qtyCounter{
+         height: 100%;
+      }
+   }
+}

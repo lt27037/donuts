@@ -36,7 +36,7 @@ const ProductThumbnail = ({ product }) => {
         </div>
         <AddToCart
           className="productThumbnail__addToCart"
-          onClick={() => dispatch(addToCart(product.id))}
+          onClick={(e) => dispatch(addToCart(product.id))}
         />
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -27,7 +28,11 @@ const Mainsection = () => {
     <section className="mainSection">
       <h1 className="mainSection__title">
         <span>Ręcznie robione</span>Rzemieślnicze pączki
-        <button>Zobacz wszystkie</button>
+        <Link to="/produkty">
+          <button className="mainSection__title__button">
+            Zobacz wszystkie
+          </button>
+        </Link>
       </h1>
       <img
         src={Donuts}

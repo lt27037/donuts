@@ -41,3 +41,34 @@
       }
    }
 }
+
+@media(max-width: 1200px){
+   .productsPage{
+      &__container{
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 1%;
+         row-gap: 5vh;
+         padding: 0 1% 10rem 1%;
+      }
+   }
+}
+
+@media(max-width: 1000px){
+   .productsPage{
+      &__container{
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 5%;
+         padding: 0 2% 10rem 2%;
+      }
+   }
+}
+
+@media(max-width: 1000px){
+   .productsPage{
+      &__container{
+         grid-template-columns: 100%;
+         row-gap: 4vh;
+         padding: 0 3% 10rem 3%;
+      }
+   }
+}

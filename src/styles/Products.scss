@@ -32,3 +32,23 @@
       }
    }
 }
+
+@media(max-width: 1200px){
+   .products{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media(max-width: 786px){
+   .products{
+      grid-template-columns: 100%;
+      &__title{
+         position: absolute;
+         width: 100%;
+         top: -5rem;
+         left: 55%;
+         font-size: 8rem;
+         font-weight: 400;
+      }
+   }
+}

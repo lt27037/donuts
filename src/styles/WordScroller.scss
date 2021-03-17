@@ -1,11 +1,15 @@
+@import 'variables';
+
 .wordScroller{
-   display: flex;
+   @include elementFlex(row, flex-start, center);
    position: absolute;
-   width: 300vw;
+   min-width: 700vw;
    &__word{
+      @include elementFlex(row, flex-start, center);
+      flex-wrap: nowrap;
+      width: auto;
       padding: 0 2.5rem;
-      font-size: 6rem;
-      display: flex;
+      font-size: 4rem;
       font-weight: 700;
       text-transform: uppercase;
    }

@@ -10,10 +10,13 @@
 
 :root{
    font-size: 62.5%;
+   overflow-x: hidden;
 }
 
 body{
    background-color: #f3f3f3;
+   width: 100%;
+   overflow-x: hidden;
 }
 
 .button{
@@ -38,6 +41,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media(max-width: 1550px){
  :root{
-    font-size: 55%;
+    font-size: 53%;
  }  
+}
+
+@media(max-width: 1200px){
+ :root{
+    font-size: 49%;
+ }  
+}
+
+@media(max-width: 1000px){
+ :root{
+    font-size: 45%;
+ }
 }
