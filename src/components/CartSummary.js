@@ -34,7 +34,7 @@ const CartSummary = ({ cart }) => {
       <span className="cartSummary__fullPrice">
         {price === 0 ? 0.0 : fullPrice.toFixed(2)} PLN
       </span>
-      <button className="cartSummary__checkout">Przejdź do płatności</button>
+      <button className="cartSummary__checkout">Złóż zamówienie</button>
     </div>
   );
 };

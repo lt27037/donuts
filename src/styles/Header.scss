@@ -10,13 +10,9 @@
    @include elementFlex(row, space-between, center);
    z-index: 100;
    // mix-blend-mode: difference;
-  filter: invert(100%);
+//   filter: invert(100%);
    &__logo{
       width: 180px;
-   }
-   .cartCounter{
-      font-size: 3rem;
-      color: rgb(0, 0, 0);
    }
    &__wrapper{
       @include elementFlex(row-reverse, center, center);
@@ -29,6 +25,19 @@
    &__products{
       font-size: 3rem;
       padding-right: 3rem;
+   }
+}
+
+.cartCounter{
+   @include elementFlex(row, flex-end, center);
+   font-size: 3rem;
+   color: rgb(0, 0, 0);
+   &__icon{
+      width: 4rem;
+      margin-right: 1rem;
+   }
+   &__number{
+      width: 4rem;
    }
 }
 

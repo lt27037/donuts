@@ -21,28 +21,13 @@ const Mainsection = () => {
     });
 
     tl.to(donutsBg.current, { y: 280 }, 0);
-
-    const tlHeader = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".mainSection",
-        start: "bottom 10%",
-        end: "bottom top",
-        scrub: true,
-      },
-    });
-
-    tlHeader.fromTo(
-      ".mainHeader",
-      { filter: "invert(100%)" },
-      { filter: "invert(0%)" },
-      0
-    );
   }, []);
 
   return (
     <section className="mainSection">
       <h1 className="mainSection__title">
         <span>Ręcznie robione</span>Rzemieślnicze pączki
+        <button>Zobacz wszystkie</button>
       </h1>
       <img
         src={Donuts}

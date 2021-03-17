@@ -11,7 +11,7 @@
    &__photo{
       @include selfCenter();
       transform: rotateZ(-4deg);
-      width: 900px;
+      width: 800px;
       grid-row: 1;
       grid-column: 1;
    }
@@ -25,5 +25,11 @@
       left: -5%;
       transform: translateY(-50%);
       top: 50%;
+   }
+   &__zigzak{
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%) scale(1.4);
+      right: 20%;
    }
 }

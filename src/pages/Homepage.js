@@ -9,6 +9,8 @@ import Recipes from "../components/sections/Recipes";
 import About from "../components/sections/About";
 import Products from "../components/sections/Products";
 import OurShop from "../components/sections/OurShop";
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -22,12 +24,14 @@ const Homepage = () => {
 
   return (
     <div>
+      <Header />
       <Mainsection />
       <TopProducts />
       <About />
       <Recipes />
       <Products />
       <OurShop />
+      <Footer />
     </div>
   );
 };

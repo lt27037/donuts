@@ -3,11 +3,13 @@
 .productsPage{
    width: 100%;
    min-height: 100vh;
+   position: relative;
+   overflow: hidden;
    &__title{
       font-size: 8rem;
       width: 100%;
       text-align: center;
-      padding: 5rem 0 7rem 0;
+      padding: 10rem 0 7rem 0;
    }
    &__container{
       width: 100%;
@@ -16,5 +18,26 @@
       column-gap: 5%;
       row-gap: 10vh;
       padding: 0 5% 10rem 5%;
+   }
+   &__zigzak{
+      position: absolute;
+      z-index: -1;
+      top: 5rem;
+      left: 33%;
+      opacity: 1;
+      path{
+         fill: pink
+      }
+   }
+   &__arrow{
+      position: absolute;
+      z-index: -1;
+      right: 40%;
+      top: 50%;
+      opacity: 0.3;
+      transform: rotateZ(45deg) scale(7);
+      path{
+         fill: pink
+      }
    }
 }

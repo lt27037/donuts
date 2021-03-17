@@ -9,6 +9,8 @@ import QtyCounter from "../components/QtyCounter";
 import { ReactComponent as Zigzak } from "../images/zagzak.svg";
 
 import "../styles/Product.scss";
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
 
 const Product = () => {
   const [qty, setQty] = useState(1);
@@ -47,18 +49,22 @@ const Product = () => {
   console.log(product);
 
   return (
-    <div className="product">
-      <img src={picture?.url} alt="donut" className="product__photo" />
-      <div className="product__info">
-        <div className="product__name">{product?.name}</div>
-        <div className="product__price">{product?.price?.formatted}zł</div>
-        <div className="product__description">{descriptionText}</div>
-        <QtyCounter qty={qty} setQty={setQty} />
-        <button className="button" onClick={handleCart}>
-          Dodaj do koszyka
-        </button>
+    <>
+      <Header />
+      <div className="product">
+        <img src={picture?.url} alt="donut" className="product__photo" />
+        <div className="product__info">
+          <div className="product__name">{product?.name}</div>
+          <div className="product__price">{product?.price?.formatted}zł</div>
+          <div className="product__description">{descriptionText}</div>
+          <QtyCounter qty={qty} setQty={setQty} />
+          <button className="button" onClick={handleCart}>
+            Dodaj do koszyka
+          </button>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

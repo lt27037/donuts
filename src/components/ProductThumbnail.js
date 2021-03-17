@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 import { addToCart } from "../redux/shopActions";
 
-import { ReactComponent as AddToCart } from "../images/cart-plus-solid.svg";
+import { ReactComponent as AddToCart } from "../images/add_shopping_cart_black_24dp.svg";
 
 import "../styles/ProductsThumbnail.scss";
 

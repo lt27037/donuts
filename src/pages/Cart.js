@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import CartProduct from "../components/CartProduct";
 import CartSummary from "../components/CartSummary";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
 
 import "../styles/Cart.scss";
 
@@ -19,14 +21,18 @@ const Cart = () => {
   );
 
   return (
-    <div className="cart">
-      <section className="cart__products">
-        {items.length !== 0 ? items : isEmpty}
-      </section>
-      <section className="cart__summary">
-        <CartSummary cart={cart} />
-      </section>
-    </div>
+    <>
+      <Header />
+      <div className="cart">
+        <section className="cart__products">
+          {items.length !== 0 ? items : isEmpty}
+        </section>
+        <section className="cart__summary">
+          <CartSummary cart={cart} />
+        </section>
+      </div>
+      <Footer />
+    </>
   );
 };
 
